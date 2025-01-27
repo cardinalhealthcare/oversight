@@ -3,9 +3,9 @@ This script fetches data from Google Sheets and loads it into a database.
 
 Add the following to your .env file:
 
-SERVICE_ACCOUNT_FILE: path to service account file
-DATABASE_URL: database connection string
-SHEETS_TO_LOAD_FILE: path to sheets_to_load.csv
+SERVICE_ACCOUNT_FILE: path to service account file; env/service_account.json
+DATABASE_URL: database connection string; postgresql://user:password@host:port/database
+SHEETS_TO_LOAD_FILE: path to sheets_to_load.csv; env/sheets_to_load.csv
 
 SHEETS_TO_LOAD_FILE is a CSV file with the following columns:
 - sheet_id: Google Sheet ID
